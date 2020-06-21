@@ -5,6 +5,8 @@ import Home from '../components/Home'
 import Welcome from '../components/Welcome'
 import Users from "../components/user/Users"
 import {nextDate} from "element-ui/src/utils/date-util";
+import Rights from "../components/power/Right.vue";
+import Roles from "../components/power/Roles.vue"
 
 Vue.use(Router)
 
@@ -16,7 +18,9 @@ const router = new Router({
       redirect: '/welcome',
       children: [
         {path: '/welcome', component: Welcome},
-        {path: '/users',component: Users}
+        {path: '/users',component: Users},
+        {path: '/rights',component:Rights},
+        {path: '/roles',component:Roles}
       ]}
   ]
 })
